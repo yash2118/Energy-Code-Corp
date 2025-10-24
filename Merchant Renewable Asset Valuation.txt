@@ -1,0 +1,293 @@
+Merchant Renewable Asset Valuation Framework - Complete Documentation
+PROJECT OVERVIEW
+This project implements a comprehensive data-driven valuation framework for merchant renewable energy assets that have reached the end of their Power Purchase Agreements (PPAs). The framework analyzes historical performance, quantifies risks, and provides hedging decision recommendations for wind and solar assets across different US electricity markets.
+
+CORE FUNCTIONALITY
+1. DATA PROCESSING & CLEANING
+Input: Historical hourly generation data and real-time/day-ahead prices
+
+Processing: Handles negative prices, missing values, and currency formatting
+
+Output: Cleaned datasets ready for analysis across three assets:
+
+Valentino (Wind - ERCOT market)
+
+Mantero (Wind - MISO market)
+
+Howling Gale (Solar - CAISO market)
+
+2. HISTORICAL PERFORMANCE ANALYSIS
+Key Metrics Calculated:
+Capacity Factors: Actual generation vs maximum potential
+
+Price Realization: Average realized prices vs market averages
+
+Revenue Generation: Total and per-MWh revenue calculations
+
+Market Performance: Peak vs off-peak price differentials
+
+Operational Efficiency: Availability factors and generation patterns
+
+Advanced Metrics:
+Price volatility and statistical distributions
+
+Negative price event frequency and impact
+
+Seasonal and diurnal generation patterns
+
+Correlation between generation and pricing
+
+3. RISK QUANTIFICATION FRAMEWORK
+Value at Risk (VaR) Analysis:
+VaR 95%: Worst-case revenue scenarios at 95% confidence level
+
+Conditional VaR (CVaR): Expected loss beyond VaR threshold
+
+Maximum Drawdown: Largest peak-to-trough revenue decline
+
+Revenue Volatility: Standard deviation of revenue streams
+
+Risk Scoring:
+Composite risk scores combining price, volume, and market risks
+
+Sharpe and Sortino ratios for risk-adjusted returns
+
+Negative price impact quantification
+
+Extreme event probability analysis
+
+4. FORWARD-LOOKING VALUATION
+Revenue Forecasting:
+Integration of forward price curves (peak/off-peak)
+
+Risk-adjusted revenue projections over 5-year horizon
+
+Monte Carlo simulations for revenue uncertainty
+
+Seasonal pattern incorporation
+
+Risk Adjustments:
+VaR-based risk premiums
+
+Negative price event adjustments
+
+Volatility-based contingencies
+
+Market-specific risk factors
+
+5. HEDGING DECISION FRAMEWORK
+Decision Matrix:
+Fixed price offers vs merchant exposure comparison
+
+Risk-adjusted price calculations
+
+Confidence-based recommendations
+
+Portfolio-level optimization
+
+Recommendation Categories:
+ACCEPT: Fixed price offers exceed risk-adjusted values
+
+CONSIDER: Marginal cases requiring negotiation
+
+REJECT: Merchant exposure preferable to offered prices
+
+NEGOTIATE: Seek improved terms based on risk analysis
+
+COMPREHENSIVE VISUALIZATION SUITE
+1. PERFORMANCE DASHBOARD (11 Integrated Charts)
+A. Multi-Dimensional Radar Chart
+6-axis comparison: Capacity Factor, Price Realization, Revenue Stability, Risk-Adjusted Return, Market Capture, Operational Efficiency
+
+Visual performance profiling across all assets
+
+Quick identification of strengths and weaknesses
+
+B. Revenue Risk Analysis
+Base revenue forecasts with 95% confidence intervals
+
+Visual representation of risk bands
+
+Risk premium quantification
+
+Comparative risk exposure across assets
+
+C. Price Distribution Analysis
+Violin plots showing price density distributions
+
+Statistical markers (mean, median, quartiles)
+
+Negative price event visualization
+
+Market volatility comparisons
+
+D. Hedging Decision Matrix
+2x2 quadrant analysis (Risk Premium vs Price Difference)
+
+Color-coded recommendations (Green=Accept, Orange=Consider, Red=Reject)
+
+Confidence-level sizing
+
+Strategic positioning visualization
+
+E. Seasonal Pattern Analysis
+Monthly generation vs price correlations
+
+Dual-axis charts for comparative analysis
+
+Seasonal trend identification
+
+Market characteristic patterns
+
+F. Risk-Return Scatter Plot
+Bubble chart with VaR (x-axis) vs Sharpe Ratio (y-axis)
+
+Revenue-weighted bubble sizing
+
+Efficient frontier concept illustration
+
+Asset classification by type (wind/solar)
+
+G. Forward Curve Analysis
+Monthly forward price curves vs fixed offers
+
+Seasonal pattern visualization
+
+Value gap identification
+
+Timing strategy insights
+
+H. Negative Price Impact
+Triple metric comparison: Negative hours, percentage, revenue impact
+
+Stacked bar visualization
+
+Comparative risk assessment
+
+Impact quantification
+
+I. Value at Risk Distribution
+Probability density functions for revenue
+
+VaR threshold markings
+
+Distribution shape analysis
+
+Risk profile comparisons
+
+J. Monte Carlo Simulation
+20 sample revenue paths per asset
+
+Mean path highlighting
+
+Uncertainty range visualization
+
+Long-term projection stability
+
+K. Correlation Heatmap
+Generation-Price-Revenue correlation matrix
+
+Color-coded correlation strength
+
+Relationship pattern identification
+
+Market behavior insights
+
+2. SPECIALIZED STANDALONE VISUALIZATIONS
+Time-of-Day Analysis
+24-hour generation patterns (dual subplots)
+
+Hourly price patterns
+
+Asset-specific diurnal characteristics
+
+Operational timing optimization insights
+
+Cumulative Revenue Analysis
+Time-series revenue accumulation
+
+Growth trajectory comparison
+
+Performance trend identification
+
+Historical revenue stability assessment
+
+KEY METHODOLOGICAL INNOVATIONS
+1. Integrated Risk-Adjusted Pricing
+Combines historical volatility with forward expectations
+
+Quantifies risk premiums based on empirical data
+
+Provides transparent valuation methodology
+
+2. Multi-Dimensional Performance Scoring
+Moves beyond simple financial metrics
+
+Incorporates operational, market, and risk dimensions
+
+Enables comprehensive asset comparison
+
+3. Dynamic Decision Framework
+Context-aware recommendation engine
+
+Confidence-level quantification
+
+Portfolio optimization considerations
+
+4. Market-Specific Analysis
+ERCOT: High volatility, negative price focus
+
+MISO: Moderate risk, stable performance
+
+CAISO: Duck curve dynamics, solar-specific patterns
+
+PRACTICAL APPLICATIONS
+For Renewable Developers:
+Portfolio risk management
+
+Contract negotiation support
+
+Asset acquisition/divestment decisions
+
+Strategic planning and budgeting
+
+For Risk Managers:
+Quantitative risk measurement
+
+Hedging strategy development
+
+Exposure limit setting
+
+Regulatory compliance support
+
+For Investors:
+Due diligence support
+
+Return expectation setting
+
+Portfolio optimization
+
+Risk-adjusted performance benchmarking
+
+TECHNICAL IMPLEMENTATION
+Data Requirements:
+3+ years of hourly generation data
+
+Corresponding real-time and day-ahead prices
+
+Forward price curves (peak/off-peak)
+
+Asset characteristics and market definitions
+
+Output Deliverables:
+Comprehensive valuation reports
+
+Interactive dashboards
+
+Risk quantification metrics
+
+Actionable hedging recommendations
+
+Strategic insights and market intelligence
+
+This framework represents a significant advancement in renewable energy asset valuation by combining rigorous quantitative analysis with practical business decision support, enabling stakeholders to navigate the complex merchant power environment with data-driven confidence.
